@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 
-const TextStyle textStyle = TextStyle(fontSize: 18.0);
-const double iconSize = 80.0;
-const double sizedBoxSpacing = 15.0;
+import 'constants.dart';
 
 class IconColumn extends StatelessWidget {
   IconColumn({@required IconData icondata, @required String text}) {
@@ -19,14 +17,14 @@ class IconColumn extends StatelessWidget {
       children: <Widget>[
         Icon(
           _icon,
-          size: iconSize,
+          size: kIconSize,
         ),
         SizedBox(
-          height: sizedBoxSpacing,
+          height: kSizedBoxSpacing,
         ),
         Text(
           _text,
-          style: textStyle,
+          style: kTextStyle,
         )
       ],
     );
